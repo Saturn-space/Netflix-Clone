@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    font-family: "Martel Sans";
+    overflow-x: hidden;
+
+}
+
+.main {
+    background-image: url(background.jpg);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* background-position: center center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.btn:hover {
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 60px;
+    max-width: 80vw;
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+}
+
+nav img {
+    height: 60px;
+    width: 150px;
+
+}
+
+.nav_button1 {
+    height: 35px;
+    width: 120px;
+    background-color: rgba(51, 51, 51, 0.589);
+    color: white;
+    border-radius: 4px;
+    border: 1px solid gray;
+    font-size: medium;
+    text-align: center;
+    margin-right: 5px;
+    margin: 2px;
+}
+
+nav .nav_button2 {
+    height: 35px;
+    width: 80px;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.main .box {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.75;
+    top: 0%;
+    position: absolute;
+}
+
+.main .text {
+    color: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    height: 600px;
+}
+
+.main .text .heading {
+    font-size: 56px;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 70px;
+}
+
+.main .para1 {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 50px;
+}
+
+.main .para2 {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 50px;
+
+}
+
+.b1 {
+    height: 52px;
+    width: 360px;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 10px;
+    background-color: rgba(32, 32, 32, 0.774);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+    opacity: 0.7;
+    margin-right: 5px;
+}
+
+.b2 {
+    height: 55px;
+    width: 210px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+}
+.first {
+           height: 100vh;
+           width: 100vw;
+}
+@media screen and (max-width:1200px) {
+
+    .main .text .heading {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    
+    .main .para1 ,.para2 {
+        font-size: 18px;
+        line-height: 40px;
+    }
+    
+    .main .para2 {
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .main .navbuttons {
+        display: flex;
+        justify-content:right;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    nav{
+        max-width: 90%;
+        
+    }
+    .main .text {
+        height: 500px;
+        width: 90%;
+    }
+
+}
+.seperation {
+    background-color: rgba(255, 13, 13, 0.5);
+    width: 100vw;
+    height: 5px;
+    border: none;
+    opacity: 0.9;
+}
+
+.trending_now {
+    margin: auto;
+    max-width: 1080px;
+    padding: 50px;
+}
+
+.slider {
+    display: grid;
+    grid-template-columns: 180px 180px 180px 180px 180px;
+    grid-template-rows: 250px 250px;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 40px;
+}
+
+    .sbox img {
+        border-radius: 10px;
+        height: 250px;
+        width: 180px;
+    }
+
+    .sbox img:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: 0.4s;
+    }
+
+    @media screen and (max-width : 1135px) {
+        
+        .trending_now {
+            margin: auto;
+            max-width: 80%;
+            padding: 10px;
+        }        
+        .slider ,.trending_now {
+            grid-template-columns: repeat(2,auto);
+            gap:20px;
+            grid-template-rows: auto;
+        }
+        .sbox img {
+            border-radius: 10px;
+            height: 80%;
+            width: 100%;
+        }
+    
+    }
+
+    .cards {
+        margin: auto;
+        padding: 50px;
+        max-width: 1100px;
+    }
+
+
+    .More_reasons {
+        display: flex;
+        justify-content: center;
+    }
+
+    h4 {
+        color: white;
+        font-size: 25px;
+        font-weight: 600;
+        padding: 30px;
+    }
+
+    .More_reasons .card {
+        height: 320px;
+        width: 230px;
+        background-color: #21101b;
+        margin: 15px;
+        border-radius: 15px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .card .heading {
+        color: white;
+        font-size: 23px;
+        font-weight: 700;
+        padding: 5px 15px 15px 5px;
+    }
+
+    .card .sentance {
+        color: rgba(255, 255, 255, 0.747);
+        font-size: 16px;
+        font-weight: 500;
+        padding: 3px;
+    }
+
+    .card img {
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+
+    }
+    @media screen and (max-width : 1135px) {
+        .More_reasons {
+            flex-wrap: wrap;
+        }
+        h4 {
+           
+            font-size: 22px;
+            padding: 10px;
+        }
+        .cards {
+            
+            padding: 10px;
+            
+        }
+    
+    }
+
+    .FAQ_boxes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+   
+
+    .FAQ {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .FAQ_box {
+        color: white;
+        background-color: #2d2d2d;
+        height: 80px;
+        width: 90%;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    @media screen and (max-width:1000px) {
+        
+        .FAQ {
+            width: 90%;
+            margin: auto;
+        }
+    
+        .FAQ_box {
+            height: 100%;
+            width: 80%;
+            font-size: 15px;
+        }
+
+    }
+
+    .FAQ_box:hover {
+        cursor: pointer;
+        background-color: #4b4b4b;
+        transition: all 0.9s;
+    }
+
+    .box2nd {
+        color: rgb(255, 255, 255);
+        font-family: "Martel Sans";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        flex-direction: column;
+        margin: auto;
+        padding: 60px;
+    }
+
+    .b1a {
+        height: 52px;
+        width: 530px;
+        font-size: 15px;
+        font-weight: 600;
+        padding-left: 10px;
+        background-color: rgba(32, 32, 32, 0.774);
+        color: white;
+        border-radius: 5px;
+        border: 1px solid gray;
+        opacity: 0.7;
+        margin-top: 20px;
+        margin-right: 8px;
+    }
+    @media screen and (max-width:1000px) {
+
+          .b2{
+            width: 60%;
+            height: 2.8em;
+            font-size: 80%;
+            margin-left:40px;
+          }
+
+        .b1a,.b1{
+            margin: 20px;
+            width: 90%;
+          }
+        
+    }
+
+    .lower {
+        margin: auto;
+        width: 1000px;
+        height: 450px;
+    }
+
+    .lower .lists {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+    .lists ul li {
+        margin-top: 12px;
+        list-style: none;
+    }
+
+    @media screen and (max-width:1000px) {
+
+        .lower {
+            width: 60%;
+            height: 130%;
+        }
+        .lower .lists{
+            display: grid;
+            grid-template-columns: repeat(2,128px);
+            column-gap: 40px;
+            justify-content: center;
+        }
+    
+    }
+
+    a,
+    .title,
+    #heading {
+        color: #858585;
+    }
+
+    .title,
+    #heading,
+    #button {
+        margin-left: 70px;
+        margin-bottom: 50px;
+    }
